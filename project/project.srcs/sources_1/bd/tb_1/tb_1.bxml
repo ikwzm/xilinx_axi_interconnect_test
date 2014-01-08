@@ -2,8 +2,8 @@
 <Root MajorVersion="0" MinorVersion="27">
   <CompositeFile CompositeFileTopName="tb_1" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED"/>
+    <Generation Name="SYNTHESIS" State="STALE"/>
+    <Generation Name="IMPLEMENTATION" State="STALE"/>
     <Generation Name="SIMULATION" State="GENERATED"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="hdl\tb_1.vhd" Type="VHDL">
@@ -13,21 +13,21 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\tb_1_BFM_1\tb_1_BFM_1.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1389192230" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1389193503" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\tb_1_axi_interconnect_0_2\tb_1_axi_interconnect_0_2.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1389192905" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1389193754" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\tb_1_auto_ds_10\tb_1_auto_ds_10.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1389192976" IsTrackable="true"/>
+      <File Name="ip\tb_1_auto_ds_14\tb_1_auto_ds_14.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
