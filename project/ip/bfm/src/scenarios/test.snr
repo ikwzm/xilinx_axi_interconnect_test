@@ -1,0 +1,42 @@
+- - [MARCHAL]
+  - SAY : >  
+          XILINX AXI INTERCONNECT TEST BENCH SCENARIO 1.1
+---
+- - [M00]
+  - WRITE :
+      ADDR  : "32'h00000004"
+      DATA  : "32'hDEADBEAF"
+
+- - [S00]
+  - AW:
+    - READY : 0
+    - WAIT  : 10
+    - READY : 1
+    - WAIT  : {AWVALID: 1, AWREADY: 1, TIMEOUT: 100000}
+    - CHECK :
+        ADDR  : "32'h00000004"
+        BURST : INCR
+        LEN   : 1              # LEN   = 1word
+        SIZE  : 4              # SIZE  = 4byte(32bit)
+        ID    : 0
+    - READY : 0
+  - W:
+    - READY : 0
+    - WAIT  : {AWVALID: 1, AWREADY: 1, TIMEOUT: 100000}
+    - READY : 1
+    - WAIT  : {WVALID: 1, WREADY: 1, TIMEOUT: 100000}
+    - CHECK :
+        DATA  : "32'hDEADBEAF"
+        STRB  :  "4'b1111"
+        LAST  : 1
+    - READY : 1
+  - B:
+    - VALID : 0
+      RESP  : OKAY
+    - WAIT  : {WVALID: 1, WREADY: 1, WLAST:1, TIMEOUT: 100000}
+    - VALID : 1
+      RESP  : OKAY
+    - WAIT  : {BVALID: 1, BREADY: 1, TIMEOUT: 100000}
+    - VALID : 0
+      RESP  : OKAY
+---
