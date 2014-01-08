@@ -30,54 +30,54 @@
     <spirit:version>1.00.a</spirit:version>
     <spirit:componentInstances>
       <spirit:componentInstance>
-        <spirit:instanceName>DUT</spirit:instanceName>
-        <spirit:componentRef spirit:library="BlockDiagram/tb_1_imp" spirit:name="DUT" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">tb_1_axi_interconnect_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="appcore">xilinx.com:ip:axi_interconnect:2.1</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>BFM</spirit:instanceName>
         <spirit:componentRef spirit:library="Dummy_Plug" spirit:name="AXI4_INTERCONNECT_TEST_BFM" spirit:vendor="ikwzm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">tb_1_AXI4_INTERCONNECT_TEST_BFM_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">tb_1_BFM_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="M00_DATA_WIDTH">512</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SCENARIO_FILE">../../../ip/bfm/src/scenarios/test.snr</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>DUT</spirit:instanceName>
+        <spirit:componentRef spirit:library="BlockDiagram/tb_1_imp" spirit:name="DUT" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">tb_1_axi_interconnect_0_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="appcore">xilinx.com:ip:axi_interconnect:2.1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:interconnections>
       <spirit:interconnection>
-        <spirit:name>BFM_M00</spirit:name>
-        <spirit:activeInterface spirit:busRef="M00" spirit:componentRef="BFM"/>
-        <spirit:activeInterface spirit:busRef="S00_AXI" spirit:componentRef="DUT"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
         <spirit:name>DUT_M00_AXI</spirit:name>
         <spirit:activeInterface spirit:busRef="M00_AXI" spirit:componentRef="DUT"/>
         <spirit:activeInterface spirit:busRef="S00" spirit:componentRef="BFM"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>BFM_M00</spirit:name>
+        <spirit:activeInterface spirit:busRef="M00" spirit:componentRef="BFM"/>
+        <spirit:activeInterface spirit:busRef="S00_AXI" spirit:componentRef="DUT"/>
       </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
         <spirit:name>BFM_ACLK0</spirit:name>
         <spirit:internalPortReference spirit:componentRef="BFM" spirit:portRef="ACLK0"/>
+        <spirit:internalPortReference spirit:componentRef="BFM" spirit:portRef="M00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="BFM" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="DUT" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="DUT" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="DUT" spirit:portRef="M00_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="BFM" spirit:portRef="M00_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="BFM" spirit:portRef="S00_ACLK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>BFM_ARESETn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="BFM" spirit:portRef="ARESETn"/>
-        <spirit:internalPortReference spirit:componentRef="DUT" spirit:portRef="ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="DUT" spirit:portRef="S00_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="DUT" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="BFM" spirit:portRef="M00_ARESETn"/>
         <spirit:internalPortReference spirit:componentRef="BFM" spirit:portRef="S00_ARESETn"/>
+        <spirit:internalPortReference spirit:componentRef="DUT" spirit:portRef="M00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="DUT" spirit:portRef="S00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="DUT" spirit:portRef="ARESETN"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>
@@ -480,7 +480,7 @@
         <spirit:instanceName>auto_ds</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_dwidth_converter" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">tb_1_auto_ds_4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">tb_1_auto_ds_10</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SI_DATA_WIDTH">512</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MI_DATA_WIDTH">32</spirit:configurableElementValue>
         </spirit:configurableElementValues>

@@ -6,8 +6,8 @@ preplace inst DUT -pg 1 -lvl 2 -y 150 -defaultsOSRD
 preplace netloc BFM_M00 1 1 1 N
 preplace netloc BFM_ACLK0 1 0 2 30 20 250
 preplace netloc BFM_ARESETn 1 0 2 40 30 240
-preplace netloc DUT_M00_AXI 1 0 3 20 10 NJ 10 530
-levelinfo -pg 1 0 140 420 550
+preplace netloc DUT_M00_AXI 1 0 3 20 10 NJ 10 510
+levelinfo -pg 1 0 140 400 530
 ",
 }
 0

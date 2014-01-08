@@ -84,7 +84,7 @@ entity s00_couplers_imp_6WEGOS is
 end s00_couplers_imp_6WEGOS;
 
 architecture STRUCTURE of s00_couplers_imp_6WEGOS is
-  component tb_1_auto_ds_4 is
+  component tb_1_auto_ds_10 is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -163,7 +163,7 @@ architecture STRUCTURE of s00_couplers_imp_6WEGOS is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component tb_1_auto_ds_4;
+  end component tb_1_auto_ds_10;
   signal S_ACLK_1 : STD_LOGIC;
   signal S_ARESETN_1 : STD_LOGIC;
   signal auto_ds_to_s00_couplers_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -317,7 +317,7 @@ begin
   s00_couplers_to_auto_ds_WLAST <= S_AXI_wlast;
   s00_couplers_to_auto_ds_WSTRB(63 downto 0) <= S_AXI_wstrb(63 downto 0);
   s00_couplers_to_auto_ds_WVALID <= S_AXI_wvalid;
-auto_ds: component tb_1_auto_ds_4
+auto_ds: component tb_1_auto_ds_10
     port map (
       m_axi_araddr(31 downto 0) => auto_ds_to_s00_couplers_ARADDR(31 downto 0),
       m_axi_arburst(1 downto 0) => auto_ds_to_s00_couplers_ARBURST(1 downto 0),
@@ -399,7 +399,7 @@ auto_ds: component tb_1_auto_ds_4
 end STRUCTURE;
 library IEEE; use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM; use UNISIM.VCOMPONENTS.ALL; 
-entity tb_1_axi_interconnect_0_0 is
+entity tb_1_axi_interconnect_0_2 is
   port (
     ACLK : in STD_LOGIC;
     ARESETN : in STD_LOGIC;
@@ -482,9 +482,9 @@ entity tb_1_axi_interconnect_0_0 is
     S00_AXI_wstrb : in STD_LOGIC_VECTOR ( 63 downto 0 );
     S00_AXI_wvalid : in STD_LOGIC
   );
-end tb_1_axi_interconnect_0_0;
+end tb_1_axi_interconnect_0_2;
 
-architecture STRUCTURE of tb_1_axi_interconnect_0_0 is
+architecture STRUCTURE of tb_1_axi_interconnect_0_2 is
   signal DUT_ACLK_net : STD_LOGIC;
   signal DUT_ARESETN_net : STD_LOGIC;
   signal DUT_to_s00_couplers_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -732,7 +732,7 @@ entity tb_1 is
 end tb_1;
 
 architecture STRUCTURE of tb_1 is
-  component tb_1_AXI4_INTERCONNECT_TEST_BFM_0_0 is
+  component tb_1_BFM_1 is
   port (
     M00_ACLK : in STD_LOGIC;
     M00_ARESETn : in STD_LOGIC;
@@ -824,7 +824,7 @@ architecture STRUCTURE of tb_1 is
     ACLK1 : out STD_LOGIC;
     ARESETn : out STD_LOGIC
   );
-  end component tb_1_AXI4_INTERCONNECT_TEST_BFM_0_0;
+  end component tb_1_BFM_1;
   signal BFM_ACLK0 : STD_LOGIC;
   signal BFM_ARESETn : STD_LOGIC;
   signal BFM_M00_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -908,7 +908,7 @@ architecture STRUCTURE of tb_1 is
   signal NLW_BFM_S00_BID_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_BFM_S00_RID_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
 begin
-BFM: component tb_1_AXI4_INTERCONNECT_TEST_BFM_0_0
+BFM: component tb_1_BFM_1
     port map (
       ACLK0 => BFM_ACLK0,
       ACLK1 => NLW_BFM_ACLK1_UNCONNECTED,
@@ -1012,7 +1012,7 @@ BFM: component tb_1_AXI4_INTERCONNECT_TEST_BFM_0_0
       S00_WSTRB(3 downto 0) => DUT_M00_AXI_WSTRB(3 downto 0),
       S00_WVALID => DUT_M00_AXI_WVALID
     );
-DUT: entity work.tb_1_axi_interconnect_0_0
+DUT: entity work.tb_1_axi_interconnect_0_2
     port map (
       ACLK => BFM_ACLK0,
       ARESETN => BFM_ARESETn,
