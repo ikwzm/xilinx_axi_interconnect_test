@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--Product Version: Vivado v2013.4 (64-bit)-->
-<Project Version="6" Minor="14" Path="H:/work/xilinx_axi_interconnect_test/project/project.xpr">
+<Project Version="6" Minor="14" Path="./project.xpr">
 	<FileSet Dir="sources_1" File="fileset.xml"/>
 	<FileSet Dir="constrs_1" File="fileset.xml"/>
 	<FileSet Dir="sim_1" File="fileset.xml"/>

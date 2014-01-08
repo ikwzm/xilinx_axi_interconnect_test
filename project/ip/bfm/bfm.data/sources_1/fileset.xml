@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="30">
+  <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/core/util.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/core/util.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/core/vocal.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/core/vocal.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/core/sync.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/core/sync.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/core/reader.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/core/reader.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/core/core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/core/core.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/axi4/axi4_types.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/axi4/axi4_types.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/axi4/axi4_core.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/axi4/axi4_core.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/axi4/axi4_channel_player.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/axi4/axi4_channel_player.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/core/marchal.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/core/marchal.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/axi4/axi4_slave_player.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/axi4/axi4_slave_player.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/axi4/axi4_models.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/axi4/axi4_models.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/Dummy_Plug/src/main/vhdl/axi4/axi4_master_player.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Dummy_Plug/src/main/vhdl/axi4/axi4_master_player.vhd"/>
+        <Attr Name="ImportTime" Val="1389183858"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bfm/src/vhdl/axi4_interconnect_test_bfm.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="Dummy_Plug"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/vhdl/axi4_interconnect_test_bfm.vhd"/>
+        <Attr Name="ImportTime" Val="1389183688"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AXI4_INTERCONNECT_TEST_BFM"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="IPRepoPath" Val="h:/work/xilinx_axi_interconnect_test/project/ip/bfm"/>
+    </Config>
+  </FileSet>
+</DARoots>
